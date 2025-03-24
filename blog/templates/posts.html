@@ -6,7 +6,7 @@
     <p>{{post.date|date:"l, d F Y"}}<p>
     <h2>{{post.title}}</h2>
     <p>{{post.description|striptags|truncatechars:150}}</p>
-    <img src="{{post.image.url}}" alt="{{post.title}}">
+    <img src="{{post.image.url}}" width="700" height="500" alt="{{post.title}}">
     <a href="{% url 'blog:post_detail' post.id %}">{{post.title}}</a>
     <hr>
     <br>
